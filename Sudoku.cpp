@@ -24,7 +24,7 @@ bool subSquareCondition(int x,int y,int num){
 	return true;
 }
 bool valide(int x,int y,int num){
-	return RowCondition(x,y,num)&&ColCondition(x,y,num)&&subSquareCondition(x,y,num);
+	return RowCondition(x,num)&&ColCondition(y,num)&&subSquareCondition(x,y,num);
 }
 
 bool Solve(){
