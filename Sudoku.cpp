@@ -1,14 +1,14 @@
 #include<bits/stdc++.h>
 using namespace std;
 int tab[10][10];
-bool RowCondition(int i,int j,int num){
+bool RowCondition(int i,int num){
 	for(int indx=0;indx<9;indx++){
 		if(num==tab[i][indx])
 			return false;
 	}
 	return true;
 }
-bool ColCondition(int i,int j,int num){
+bool ColCondition(int j,int num){
 	for(int indx=0;indx<9;indx++){
 		if(num==tab[indx][j])
 			return false;
